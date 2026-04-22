@@ -26,7 +26,7 @@ async function chamarApi() {
         exibirDados(graus, descricao_clima, umidade, cidade_usuario, iconClima)
 
     } else if (response.status == 404) {
-        alert("cidade não encontrada " + response.status)
+        alert("cidade não encontrada ")
     } else {
         alert("Erro na requisição " + response.status)
     }
