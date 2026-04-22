@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(16 20 24);
+    font-family: "Inter", sans-serif;
+}
+
+.titulo {
+    color: rgb(224 227 232);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo::after {
+    content: " 🌤️";
+}
+
+.container {
+    background-color: rgb(28 32 36);
+    width: 95%;
+    max-width: 400px;
+    border-radius: 18px;
+    padding: 20px;
+}
+
+.linha {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-cidade {
+    border: none;
+    outline: none;
+    width: calc(90% - 20px);
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(39 42 46);
+    color: rgb(224 227 232);
+}
+
+.btn-busca {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(152 204 249);
+    color: rgb(224 227 232);
+    cursor: pointer;
+}
+
+.btn-lupa {
+    width: 20px;
+}
+
+.titulo-cidade {
+    margin-top: 20px;
+    color: rgb(224 227 232);
+}
+
+.p-graus {
+    margin-top: 10px;
+    color: rgb(224 227 232);
+}
+
+.decricao-clima {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.descricao-tempo {
+    margin-top: 10px;
+    font-weight: bold;
+    color: rgb(224 227 232);
+}
+
+.umidade {
+    margin-top: 10px;
+    color: rgb(224 227 232);
+}
+
+.copy {
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    color: rgb(224 227 232);
+    margin-top: 20px;
+    font-weight: bold;
+}

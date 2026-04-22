@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto de aprendizado</title>
+</head>
+
+<body>
+    <h1 class="titulo">Previsão do Tempo</h1>
+    <div class="container">
+        <div class="linha">
+            <input class="input-cidade" type="text" placeholder="Digite uma cidade">
+            <button class="btn-busca" onclick="chamarApi()">
+                <img class="btn-lupa" src="https://www.svgrepo.com/show/488200/find.svg" alt="icon-lupa">
+            </button>
+        </div>
+        <h2 class="titulo-cidade">Tempo em São Paulo</h2>
+
+        <p class="p-graus">21ºC</p>
+        <div class="decricao-clima">
+            <img class="icon-clima" src="https://openweathermap.org/img/wn/04n.png" alt="icone-nuvem">
+            <p class="descricao-tempo">Nublado</p>
+        </div>
+        <p class="umidade">Umidade: 76%</p>
+    </div>
+    <p class="copy"> - Criado com fins de aprendizado por Júlio.</p>
+    <script src="config.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
