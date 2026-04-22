@@ -9,6 +9,7 @@ function exibirDados(graus, descricao, umidade, cidade, icon) {
 
 async function chamarApi() {
     const cidade = document.querySelector(".input-cidade").value.trim()
+    if (!cidade) return
     const API_KEY = "42261670a4ca3085d97c3519db7ac71c"
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${API_KEY}&lang=pt_br&units=metric`
 
