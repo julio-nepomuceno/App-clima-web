@@ -1,11 +1,10 @@
 function exibirDados(graus, descricao, umidade, cidade, icon) {
+    const link = `https://openweathermap.org/img/wn/${icon}.png`
     document.querySelector(".titulo-cidade").textContent = `Tempo em ${cidade}`
     document.querySelector(".p-graus").textContent = `${graus.toFixed(0)}ºC`
     document.querySelector(".umidade").textContent = `Umidade: ${umidade}%`
     document.querySelector(".descricao-tempo").textContent = descricao
-    const link = `https://openweathermap.org/img/wn/${icon}.png`
     document.querySelector(".icon-clima").src = link
-    console.log(link)
 }
 
 async function chamarApi() {
